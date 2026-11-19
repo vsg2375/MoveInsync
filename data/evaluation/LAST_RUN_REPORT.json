@@ -1,0 +1,55 @@
+{
+  "evaluation_mode": "isolated_deterministic_fake_answer",
+  "cases": 36,
+  "passed": 33,
+  "failed": 3,
+  "pass_rate": 0.917,
+  "coverage_classification_accuracy": 0.917,
+  "expected_section_retrieval_and_citation_accuracy_on_covered_cases": 1.0,
+  "citation_check_accuracy_all_cases": 1.0,
+  "latency_ms": {
+    "p50": 34.6,
+    "p95": 120.8,
+    "max": 2242.2
+  },
+  "results_file": "data\\evaluation\\results.jsonl",
+  "failures": [
+    {
+      "id": "T11",
+      "question": "Does this policy reimburse flights or inter-city trains?",
+      "answer": " This policy does not specify reimbursement for inter-city rail or air travel. Such requests must be referred to the corporate travel team.  The standard one-way ad-hoc trip reimbursement cap is INR 900 per employee per trip.  Any amount above the cap requires written approval from the transport manager before the trip is confirmed.  This version replaces TechNova Employee Commute Policy version 1.0 from its effective date.  It governs company-sponsored employee ground transport for approved work-related travel in India.",
+      "checks": {
+        "coverage": false,
+        "expected_facts": false,
+        "expected_section_cited": true,
+        "tenant_documents": true,
+        "citation_limit": true
+      }
+    },
+    {
+      "id": "D04",
+      "question": "Are contractors eligible for commute?",
+      "answer": " Guests are not permitted in employee commute vehicles, including business visitors.  Business visitor transport must be booked through the visitor transport desk and charged to the host department.  Employees assigned to an office-based or hybrid role may use the standard commute service on their scheduled office days.  Employees whose approved shift ends at or after 9:00 PM may request a company-funded drop, subject to availability.  This policy defines company-sponsored ground transport for employees travelling to and from approved DataSphere work locations in India.  The policy applies to employee commute bookings and approved business transport.",
+      "checks": {
+        "coverage": false,
+        "expected_facts": false,
+        "expected_section_cited": true,
+        "tenant_documents": true,
+        "citation_limit": true
+      }
+    },
+    {
+      "id": "D11",
+      "question": "Can I claim reimbursement for home-to-airport travel?",
+      "answer": " This policy does not define home-to-airport reimbursement. Employees must consult the business-travel policy owner.  The standard one-way ad-hoc trip reimbursement cap is INR 1,000 per employee per trip.  A higher amount requires written approval from the regional transport manager before booking confirmation.  This policy defines company-sponsored ground transport for employees travelling to and from approved DataSphere work locations in India.  The policy applies to employee commute bookings and approved business transport.",
+      "checks": {
+        "coverage": false,
+        "expected_facts": false,
+        "expected_section_cited": true,
+        "tenant_documents": true,
+        "citation_limit": true
+      }
+    }
+  ],
+  "interpretation": "This standalone evaluation exercises active-policy selection, company/version-filtered ChromaDB retrieval, reranking, evidence-grounded deterministic answer behaviour, coverage and citations. It does not call the /ask endpoint, an external LLM provider, or any network service. Authentication/API contract tests remain separate. Latency measures this local retrieval-and-fake-answer path only."
+}

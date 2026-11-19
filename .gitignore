@@ -1,0 +1,36 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+.vite/
+
+# Generated vector database
+chroma_db/
+**/chroma_db/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Operating system and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

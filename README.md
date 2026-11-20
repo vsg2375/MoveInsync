@@ -4,6 +4,10 @@
 
 CommuteIQ is a multi-tenant commute-policy assistant built for the MoveInSync AI Developer Campus Case Study B. It uses FastAPI, SQLite, ChromaDB, hybrid retrieval (dense + BM25), Groq LLM integration, JWT-based tenant isolation and a React/Vite frontend.
 
+## Demo Video
+
+[Watch the CommuteIQ Demo](https://drive.google.com/file/d/1DJQHMSQeRGcBiee4bMurRc1dXd6s3J25/view?usp=sharing)
+
 ## 1. Quick Evaluation — Start Here
 
 ### A. Start the complete application

@@ -38,3 +38,5 @@ def evaluate_question(company_id: str, question: str) -> dict:
         "citations": _citations(selected) if covered else [],
         "version": policy["version"],
     }
+
+

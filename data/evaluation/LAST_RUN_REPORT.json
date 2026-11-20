@@ -8,9 +8,9 @@
   "expected_section_retrieval_and_citation_accuracy_on_covered_cases": 1.0,
   "citation_check_accuracy_all_cases": 1.0,
   "latency_ms": {
-    "p50": 34.6,
-    "p95": 120.8,
-    "max": 2242.2
+    "p50": 27.1,
+    "p95": 58.3,
+    "max": 2759.9
   },
   "results_file": "data\\evaluation\\results.jsonl",
   "failures": [

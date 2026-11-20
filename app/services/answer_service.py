@@ -374,3 +374,6 @@ async def answer_question(company_id: str, question: str) -> dict:
 
 # Backwards-compatible names used by the evaluation and retrieval comparison scripts.
 _rank_chunks = rank_hybrid
+
+
+
